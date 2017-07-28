@@ -1,1 +1,8 @@
- <h1>Home Page</h1>
+<div class="sidebar">
+  <section class="hero-content">
+    <h1 class="hero-title">{{ home.heroTitle }}</h1>
+  </section>
+  <section class="room-container" ng-repeat="room in home.rooms"> <!-- QUESTION how do I show the names of the rooms? -->
+    <a class="room-name">{{ room.name }}test</a>
+  </section>
+</div>

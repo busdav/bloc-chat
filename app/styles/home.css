@@ -1,0 +1,26 @@
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 2rem;
+  width: 25%;
+  background-color: rgb(211,211,211);
+}
+
+.sidebar .hero-content {
+
+}
+
+.hero-content .hero-title {
+  color: rgb(50,50,50);
+}
+
+.sidebar .room-container {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.room-container .room-name {
+    color: rgb(100,100,100);
+}
