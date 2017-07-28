@@ -1,5 +1,5 @@
 (function() {
-  function config($locationProvider, $stateProvider) {
+  function config( $stateProvider, $locationProvider) {
     $locationProvider
         .html5Mode({
             enabled: true,
@@ -12,9 +12,10 @@
             controller: 'HomeCtrl as home',
             templateUrl: '/templates/home.html'
         });
-}
+    }
 
-  angular
-    .module('blocChat', ['ui.router', 'firebase'])
-    .config(config);
+    angular
+      .module('blocChat', ['ui.router', 'firebase'])
+      .config(config);
+
 })();
