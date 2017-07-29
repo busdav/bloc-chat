@@ -3,24 +3,46 @@
   left: 0;
   top: 0;
   bottom: 0;
-  padding: 2rem;
   width: 25%;
+  min-width: min-content;
+  max-width: max-content;
+  padding: 1rem;
   background-color: rgb(211,211,211);
 }
 
-.sidebar .hero-content {
-
+.sidebar .sidebar-header {
+  display: table;
+  max-width: max-content;
+  margin-bottom: 1rem;
 }
 
-.hero-content .hero-title {
+.sidebar .sidebar-title {
   color: rgb(50,50,50);
+  display: table-cell;
+  padding-right: 0.5rem;
 }
 
-.sidebar .room-container {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.sidebar .buttons {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.room-container .room-name {
+.btn-new-room {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.room-container .room-list {
+  list-style: none;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0;
+  padding: 0;
+}
+
+.room-list a,
+.room-list a:hover {
     color: rgb(100,100,100);
+    cursor: pointer;
+    text-decoration: none;
 }

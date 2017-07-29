@@ -1,8 +1,13 @@
 <div class="sidebar">
-  <section class="hero-content">
-    <h1 class="hero-title">{{ home.heroTitle }}</h1>
-  </section>
-  <section class="room-container" ng-repeat="room in home.rooms"> <!-- QUESTION how do I show the names of the rooms? -->
-    <a class="room-name">{{ room.name }}test</a>
-  </section>
+  <div class="sidebar-header">
+    <h1 class="sidebar-title">{{ home.sidebarTitle }}</h1>
+    <div class="buttons">
+      <button class="btn" type="button" ng-click="home.addRoom()">New Room</button>
+    </div>
+  </div>
+  <nav class="room-container">
+    <ul class="room-list" ng-repeat="room in home.rooms">
+      <li class="room-name"><a>{{ room.$value }}</a></li>
+    </ul>
+  </nav>
 </div>
