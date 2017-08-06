@@ -1,13 +1,23 @@
 <div class="sidebar">
   <div class="sidebar-header">
-    <h1 class="sidebar-title">{{ home.sidebarTitle }}</h1>
+    <h1 class="sidebar-title">Bloc Chat</h1>
     <div class="buttons">
       <button class="btn" type="button" ng-click="home.addRoom()">New Room</button>
     </div>
   </div>
   <nav class="room-container">
     <ul class="room-list" ng-repeat="room in home.rooms">
-      <li class="room-name"><a>{{ room.$value }}</a></li>
+      <li class="room-name"><a ng-click="home.setCurrentRoom(room)">{{ room.name }}</a></li>
     </ul>
   </nav>
+</div>
+<div class="chat-room-container">
+  <h3 class="chat-room-title">{{ home.currentRoom.name }}</h3>
+  <div class="messages-list" ng-repeat="message in home.currentMessages">
+    <div ng-class-odd="'odd'" ng-class-even="'even'">
+      <span class="username">{{ message.username }}</span>
+      <span class="timestamp">{{ message.sentAt }}</span></br>
+      <span class="message">{{ message.content }}</span>
+    </div>
+  </div>
 </div>

@@ -6,9 +6,12 @@
       };
 
       this.submit = function() {
-        Room.add(this.newRoom); // So here, `this` refers to what? the method `submit`? 
+        Room.add(this.newRoom);
         $uibModalInstance.close();
       };
+
+
+
 
     };
 

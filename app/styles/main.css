@@ -14,13 +14,13 @@ body {
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
 }
 
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+/*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }*/
 
-.main {
+/*.main {
     left: 25%;
     top: 0;
     bottom: 0;
-}
+}*/
 
 .clearfix::before,
 .clearfix::after {
