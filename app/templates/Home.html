@@ -16,8 +16,12 @@
   <div class="messages-list" ng-repeat="message in home.currentMessages">
     <div ng-class-odd="'odd'" ng-class-even="'even'">
       <span class="username">{{ message.username }}</span>
-      <span class="timestamp">{{ message.sentAt }}</span></br>
+      <span class="timestamp">{{ message.sentAt | date : 'short' }}</span></br>
       <span class="message">{{ message.content }}</span>
     </div>
+  </div>
+  <div class="message-editor" ng-show="home.currentRoom">
+    <input type="text" name="input" class="form-control" placeholder="Write your message here..." ng-model="home.currentNewMessage.content">
+    <button type="button" class="btn" ng-click="home.sendMessage(); home.currentNewMessage = null">Send</button>
   </div>
 </div>

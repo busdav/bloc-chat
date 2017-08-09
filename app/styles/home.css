@@ -83,5 +83,26 @@
 }
 
 .message {
+}
 
+.message-editor {
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  height: 3rem;
+}
+
+.message-editor .form-control {
+  width: 90%;
+  display: inline-block;
+  height: inherit;
+}
+
+.message-editor .btn {
+  width: 10%;
+  display: inline-block;
+  float: right;
+  color: white;
+  background-color: darkgray;
+  height: inherit;
 }
