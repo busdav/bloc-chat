@@ -39,7 +39,7 @@
       */
       this.sendMessage = function() {
         this.currentNewMessage.sentAt = firebase.database.ServerValue.TIMESTAMP;
-        this.currentNewMessage.username = this.currentUser;
+        this.currentNewMessage.username = $cookies.get('blocChatCurrentUser');
         this.currentNewMessage.roomId = this.currentRoom.$id;
         Message.send(this.currentNewMessage);
       };
